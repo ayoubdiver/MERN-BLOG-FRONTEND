@@ -1,14 +1,12 @@
-import React, { useContext } from "react"
+import React from "react"
 import "./blog.css"
 import { blog } from "../../assets/data/data"
 import { AiOutlineTags, AiOutlineClockCircle, AiOutlineComment, AiOutlineShareAlt } from "react-icons/ai"
 import { Link } from "react-router-dom"
-import { Context } from "../../context/Context"
 
-export const Card = () => {
+export const Card = ({posts}) => {
   // create file garnebelema
   const PublicFlo = "http://localhost:5000/images/"
-
   return (
     <>
       <section className='blog'>
