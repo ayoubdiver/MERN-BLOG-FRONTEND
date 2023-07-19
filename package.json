@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  proxy : "https://gosto-api.onrender.com/"
+  "proxy" : "https://gosto-api.onrender.com/"
 }
