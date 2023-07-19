@@ -37,7 +37,7 @@ export const Create = () => {
       }
     }
     try {
-      const res = await axios.post("/posts", newPost)
+      const res = await axios.post("https://gosto-api.onrender.com/posts", newPost)
       window.location.replace("/post/" + res.data._id)
     } catch (error) {}
   }
