@@ -8,7 +8,6 @@ import { Context } from "../../context/Context"
 export const Card = () => {
   // create file garnebelema
   const PublicFlo = "http://localhost:5000/images/"
-  const { posts } = useContext(Context)
 
   return (
     <>
