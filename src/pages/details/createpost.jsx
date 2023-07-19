@@ -18,7 +18,7 @@ export const DetailsPages = () => {
   const [post, setPost] = useState({})
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path)
+      const res = await axios.get("https://gosto-api.onrender.com/posts/" + path)
       console.log(res)
       //setp 2
       setPost(res.data)
