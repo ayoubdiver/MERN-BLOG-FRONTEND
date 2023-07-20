@@ -13,7 +13,7 @@ export const Account = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [succ, setSucc] = useState(false)
-  const PublicFlo = "https://gosto.onrender.com/images/"
+  const PublicFlo = "https://gosto-api.onrender.com/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault()
