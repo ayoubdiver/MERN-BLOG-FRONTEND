@@ -19,7 +19,7 @@ export const User = () => {
     setProfileOpen(false)
   }
 
-  const PublicFlo = "https://gosto.onrender.com/images/"
+  const PublicFlo = "https://gosto-api.onrender.com/images/"
 
   return (
     <>
