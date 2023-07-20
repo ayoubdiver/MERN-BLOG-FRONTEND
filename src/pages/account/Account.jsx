@@ -33,7 +33,7 @@ export const Account = () => {
       updateUser.profilePic = filename
 
       try {
-        await axios.post("https://gosto-api.onrender.com/upload", data)
+        await axios.post("/upload", data)
       } catch (error) {
         console.log(error)
       }
