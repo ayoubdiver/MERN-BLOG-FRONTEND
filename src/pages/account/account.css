@@ -1,49 +1,54 @@
 .accountInfo {
   margin: 80px 0;
 }
-.accountInfo .boxItems {
+.accountInfo .container {
   padding: 50px;
-  max-width: 60%;
+  max-width: 100%;
   margin: auto;
 }
-.accountInfo .content {
+.accountInfo .box{
+  background-color: #fff;
   margin-top: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+.accountInfo .left {
+  width: 100%;
   position: relative;
 }
-.accountInfo .content .left {
-  width: 150px;
-  position: relative;
-}
-.accountInfo .content .right {
-  width: calc(100% - 180px);
+.accountInfo .right {
+  width: 100%;
   margin-left: 50px;
 }
 
-.accountInfo .content .left .img input {
-  width: 150px;
+.accountInfo .box .left .img input {
+  width: 100%;
   height: 150px;
   position: relative;
   z-index: 2;
   opacity: 0;
 }
-.accountInfo .content .icon,
-.accountInfo .content .img img {
+.accountInfo .icon,
+.accountInfo .img img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
   z-index: 1;
   border-radius: 50%;
   object-fit: cover;
 }
-.accountInfo .content .right label {
+.accountInfo .box .right label {
   font-size: 17px;
   color: #000;
   margin-bottom: 10px;
   display: block;
+}
+.accountInfo .box .right input {
+  width: 100%;
 }
 .profile h4 {
   text-transform: capitalize;
@@ -54,40 +59,45 @@
   .accountInfo {
   margin: 80px 0;
 }
-.accountInfo .boxItems {
+.accountInfo .box {
   padding: 50px;
   width: 80%;
-  margin: auto;
 }
-  .accountInfo boxItems .content {
+  .accountInfo .box{
   margin-top: 80px;
   display: block;
 }
-    .accountInfo boxItems .content .left {
+.left {
+   margin-top: 10px;
   width: 100%;
 }
-  .accountInfo boxItems .content .right {
+.right {
+  margin-top: 70px;
   width: 100%;
+  margin-left: 10px;
 }
 }
 @media screen and (max-width: 700px) {
   .accountInfo {
   margin: 80px 0;
 }
-.accountInfo .boxItems {
-  padding: 50px;
+.accountInfo .box {
   width: 100%;
-  margin: auto;
 }
- .accountInfo boxItems .content {
+ .accountInfo .box{
   margin-top: 80px;
   display: block;
  
 }
-  .accountInfo boxItems .content .left {
+  .accountInfo .box .left {
+  margin-top: 10px;
   width: 100%;
 }
-  .accountInfo boxItems .content .right {
+  .accountInfo .box .right {
+  margin-top: 70px;
   width: 100%;
+  margin-left: 5px;
+
 }
 }
+
