@@ -107,7 +107,7 @@ form input {
   grid-gap: 5px;
 }
 .container {
-  max-width: 95%;
+  max-width: 100%;
   margin: auto;
 }
 footer {
@@ -133,10 +133,26 @@ footer .icon {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
+  }
 }
 @media screen and (max-width: 700px) {
   .grid3,
   .grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
   }
 }
