@@ -9,7 +9,7 @@
 .accountInfo .content {
   margin-top: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
 }
 .accountInfo .left {
@@ -49,4 +49,20 @@
   text-transform: capitalize;
   color: #000;
   font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .accountInfo .content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+}
+}
+@media screen and (max-width: 700px) {
+ .accountInfo .content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+}
 }
