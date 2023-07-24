@@ -52,18 +52,6 @@ export const User = () => {
                   <IoSettingsOutline className='icon' />
                   <h4>My Account</h4>
                 </Link>
-                <button className='box'>
-                  <BsBagCheck className='icon' />
-                  <h4>My Order</h4>
-                </button>
-                <button className='box'>
-                  <AiOutlineHeart className='icon' />
-                  <h4>Wishlist</h4>
-                </button>
-                <button className='box'>
-                  <GrHelp className='icon' />
-                  <h4>Help</h4>
-                </button>
                 <button className='box' onClick={handleLogout}>
                   <BiLogOut className='icon' />
                   {user && <h4>Log Out</h4>}
@@ -73,7 +61,7 @@ export const User = () => {
           </>
         ) : (
           <Link to='/login'>
-            <button>My Account</button>
+            <button><button><i class="fa-solid fa-user"></i></button></button>
           </Link>
         )}
       </div>
