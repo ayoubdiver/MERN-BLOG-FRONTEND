@@ -50,7 +50,7 @@ export const Account = () => {
   return (
     <>
       <section className='accountInfo'>
-        <div className='container boxItems'>
+        <div className='boxItems'>
           <h1>Account Information</h1>
           <div className='content'>
             <div className='left'>
